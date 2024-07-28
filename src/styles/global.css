@@ -28,16 +28,16 @@ a {
 }
 
 a:hover {
-  color: rgb(255, 166, 0);
   transition: all;
 }
 
 input {
-  padding: 5px 25px;
+  padding: 0.5rem 1rem;
   outline: none;
   border: 0;
   margin-right: 15px;
   border-radius: 5px;
+  height: 30px;
 }
 
 input:hover,
@@ -48,21 +48,29 @@ input:focus {
 
 button {
   cursor: pointer;
-  padding: 5px 15px;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   background: transparent;
   background-color: rgb(243, 163, 14);
   outline: none;
   border: 0;
   color: #ffffff;
-}
-
-button:hover,
-button:focus {
-  background-color: rgb(243, 163, 14);
+  height: 30px;
 }
 
 p {
-	margin-bottom: 15px;
-	line-height: 1.6;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+footer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  background-color: rgb(243, 163, 14);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
 }
