@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 ---
 
@@ -13,9 +13,9 @@ import Footer from "../components/Footer.astro";
     <title>Astro</title>
   </head>
   <body>
-    <Navigation />
+    <Header />
     <section>
-      <h1>Welcome to My Astro Blog</h1>
+      <h1>Welcome to My Blog</h1>
       <p>
         Hello there! I'm Alok, and this is my personal blog where I share
         insights on technology, coding, and web development. Dive in to explore
@@ -38,5 +38,8 @@ import Footer from "../components/Footer.astro";
       </form>
     </section>
     <Footer />
+    <script>
+      import "../scripts/menu";
+    </script>
   </body>
 </html>
