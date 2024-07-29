@@ -1,44 +1,29 @@
 ---
-import "../styles/global.css";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Astro</title>
-  </head>
-  <body>
-    <Header />
-    <section>
-      <h1>Welcome to My Blog</h1>
-      <p>
-        Hello there! I'm Alok, and this is my personal blog where I share
-        insights on technology, coding, and web development. Dive in to explore
-        tutorials, tips, and the latest trends in the industry.
-      </p>
-    </section>
-    <section>
-      <h2>Stay Connected</h2>
-      <p>
-        Don't miss out on the latest updates and posts. <a href="/subscribe"
-          >Subscribe to my newsletter</a
-        >
-      </p>
-    </section>
-    <section>
-      <h2>Search</h2>
-      <form action="/search" method="get">
-        <input type="text" name="q" placeholder="Search the blog..." />
-        <button type="submit">Search</button>
-      </form>
-    </section>
-    <Footer />
-    <script>
-      import "../scripts/menu";
-    </script>
-  </body>
-</html>
+<BaseLayout>
+  <section>
+    <h1>Welcome to My Blog</h1>
+    <p>
+      Hello there! I'm Alok, and this is my personal blog where I share insights
+      on technology, coding, and web development. Dive in to explore tutorials,
+      tips, and the latest trends in the industry.
+    </p>
+  </section>
+  <section>
+    <h2>Stay Connected</h2>
+    <p>
+      Don't miss out on the latest updates and posts. <a href="/subscribe"
+        >Subscribe to my newsletter</a
+      >
+    </p>
+  </section>
+  <section>
+    <h2>Search</h2>
+    <form action="/search" method="get">
+      <input type="text" name="q" placeholder="Search the blog..." />
+      <button type="submit">Search</button>
+    </form>
+  </section>
+</BaseLayout>

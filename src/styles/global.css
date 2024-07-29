@@ -32,6 +32,13 @@ a:hover {
   transition: all;
 }
 
+ul,ol {
+  list-style-type: none;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #ff9776;
+}
+
 input {
   padding: 0.5rem 1rem;
   outline: none;
