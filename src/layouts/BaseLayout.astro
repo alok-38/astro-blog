@@ -2,7 +2,7 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
-const pageTitle = "Blogs";
+const pageTitle = "Home";
 ---
 
 <html lang="en">
@@ -17,14 +17,17 @@ const pageTitle = "Blogs";
     <Header />
 
     <main>
-      <h1>My Astro Learning Blog</h1>
-      <p>This is where I will post about my journey learning Astro.</p>
-      <ul>
-        <li><a href="/posts/post-1/">Post 1</a></li>
-        <li><a href="/posts/post-2/">Post 2</a></li>
-        <li><a href="/posts/post-3/">Post 3</a></li>
-      </ul>
+      <section class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>
+          Discover engaging content, interesting ideas, and more. Stay tuned!
+        </p>
+        <a target="_blank" href="/about/" class="cta-button"
+          >Learn More About Me</a
+        >
+      </section>
     </main>
+    <slot />
     <Footer />
     <script>
       import "../scripts/menu.js";
