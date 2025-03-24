@@ -1,4 +1,7 @@
 ---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
 const pageTitle = "Home";
 ---
 
@@ -11,9 +14,22 @@ const pageTitle = "Home";
     <title>{pageTitle}</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-    <h1>{pageTitle}</h1>
+    <Header />
+
+    <main>
+      <section class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>
+          Discover engaging content, interesting ideas, and more. Stay tuned!
+        </p>
+        <a target="_blank" href="/about/" class="cta-button"
+          >Learn More About Me</a
+        >
+      </section>
+    </main>
+
+    <footer>
+      <Footer />
+    </footer>
   </body>
 </html>
