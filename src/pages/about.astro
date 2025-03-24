@@ -1,5 +1,19 @@
 ---
+const pageTitle = "About Me";
 
+const identity = {
+  firstName: "Alok",
+  country: "India",
+  occupation: "Frontend Web Developer",
+  hobbies: ["Reading", "Cooking", "Working-out"],
+  plans: "Full-stack web developer",
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+
+const happy = true;
+const finished = false;
+const goal = 3;
 ---
 
 <html lang="en">
@@ -8,25 +22,59 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
-    <body>
-      <a href="/">Home</a>
-      <a href="/about/">About</a>
-      <a href="/blog/">Blog</a>
-      <h1>About Me</h1>
-      <h2>... and my new Astro site!</h2>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
 
-      <p>
-        I am working through Astro's introductory tutorial. This is the second
-        page on my website, and it's the first one I built myself!
-      </p>
+    <h1>{pageTitle}</h1>
+    <h2>Welcome to My Astro Journey!</h2>
 
-      <p>
-        This site will update as I complete more of the tutorial, so keep
-        checking back and see how my journey is going!
-      </p>
-    </body>
+    <p>
+      I'm so excited to share a little about myself with you. This page is a
+      part of my learning journey, where I'm building my very own website using
+      Astro.
+    </p>
+
+    <p>
+      As I go along with this tutorial, this site will evolve, so feel free to
+      check in as I continue to build and improve it!
+    </p>
+
+    <p>Here are a few fun facts about me:</p>
+
+    <ul>
+      <li>Hi there! I'm {identity.firstName}.</li>
+      <li>
+        I'm currently based in {identity.country}, and I work as a {
+          identity.occupation
+        }. My dream is to level up and become a {identity.plans}!
+      </li>
+
+      {
+        identity.hobbies.length >= 2 && (
+          <li>
+            When I'm not coding, I love to spend my time doing a few things that
+            really energize me: {identity.hobbies[0]} and {identity.hobbies[1]}.
+          </li>
+        )
+      }
+    </ul>
+
+    <p>Some of the things I'm skilled at:</p>
+    <ul>
+      {skills.map((skill) => <li>{skill}</li>)}
+    </ul>
+    {happy && <p>I am happy to be learning Astro!</p>}
+    {finished && <p>I finished this tutorial!</p>}
+    {
+      goal === 3 ? (
+        <p>My goal is to finish in 3 days.</p>
+      ) : (
+        <p>My goal is not 3 days.</p>
+      )
+    }
   </body>
 </html>
