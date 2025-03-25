@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: My Second Blog Post
 author: Alok
 description: "After learning some Astro, I couldn't stop!"
@@ -10,3 +11,4 @@ tags: ["astro", "blogging", "learning in public", "successes"]
 ---
 
 After a successful first hour of learning Astro, I decided to try some more. I wrote and imported a small component from memory!
+check out my other [posts](http://localhost:4321/posts/post-3/)

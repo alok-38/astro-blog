@@ -2,7 +2,7 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
-const pageTitle = "Home";
+const { pageTitle } = Astro.props;
 ---
 
 <html lang="en">
@@ -16,17 +16,6 @@ const pageTitle = "Home";
   <body>
     <Header />
 
-    <main>
-      <section class="hero">
-        <h1>Welcome to My Website</h1>
-        <p>
-          Discover engaging content, interesting ideas, and more. Stay tuned!
-        </p>
-        <a target="_blank" href="/about/" class="cta-button"
-          >Learn More About Me</a
-        >
-      </section>
-    </main>
     <slot />
     <Footer />
     <script>

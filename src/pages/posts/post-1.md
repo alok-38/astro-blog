@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: "My First Blog Post - Learning Astro.js"
 pubDate: 2025-03-24
 description: "Join me as I share my learning journey with Astro.js and web development in this blog series."
@@ -9,7 +10,7 @@ image:
 tags: ["astro", "blogging", "learning in public"]
 ---
 
-# My First Blog Post
+## My First Blog Post
 
 Published on: 2025-03-24
 
@@ -23,4 +24,4 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 
 ## What's next
 
-I will finish the Astro tutorial and keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial and keep adding more [posts](http://localhost:4321/posts/post-2/). Watch this space for more to come.

@@ -3,8 +3,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Home";
 ---
 
-<BaseLayout>
-  <h2>
-    This got injected with the help of slot. Check the BaseLayout component.
-  </h2>
+<BaseLayout pageTitle={pageTitle}>
+  <main>
+    <section class="hero">
+      <h1>Welcome to My Website</h1>
+      <p>Discover engaging content, interesting ideas, and more. Stay tuned!</p>
+      <a target="_blank" href="/about/" class="cta-button"
+        >Learn More About Me</a
+      >
+    </section>
+  </main>
 </BaseLayout>
