@@ -12,4 +12,4 @@ tags: ["astro", "learning in public", "setbacks", "community"]
 
 It wasn't always smooth sailing, but I'm enjoying building with Astro. And, the [Discord community](https://astro.build/chat) is really friendly and helpful!
 
-Go back to my [first post](http://localhost:4321/posts/post-1/)
+Please feel free to check my [fourth post](http://localhost:4321/posts/post-4/)
