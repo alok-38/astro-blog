@@ -9,9 +9,11 @@ pubDate: 2022-04-27
 tags: ['beginner', 'web dev basics', 'html css javascript', 'freelance journey']
 ---
 
+# How to Become a Freelance Web Developer
+
 Acquiring the right skill set is the foundation of becoming a successful freelance web developer.
 
-# Core Skills
+## Core Skills
 
 No matter which path you take, these three skills are non-negotiable:
 
@@ -21,15 +23,31 @@ No matter which path you take, these three skills are non-negotiable:
 
 - JavaScript
 
-## Why
+## Why These Skills Matter
 
-These three are non-negotiable because they form the foundation of the web. Every website, no matter how simple or complex, relies on them.
+They’re essential because they let you go beyond templates and truly **understand how the web works**. They give you the ability to build custom solutions, fix problems, and bring any design to life.
 
-### 🔧 Platforms vs. Core Skills
+## 🔧 Platforms vs. Core Skills
 
-| Platforms                        | HTML/CSS/JavaScript           |
-| -------------------------------- | ----------------------------- |
-| Fast for simple websites         | Essential for custom websites |
-| Great for non-developers         | Gives full creative control   |
-| Limited flexibility              | Infinite flexibility          |
-| You’re bound by the tool’s rules | You create your own rules     |
+<table>
+  <tr>
+    <th>Platforms</th>
+    <th>HTML/CSS/JavaScript</th>
+  </tr>
+  <tr>
+    <td>Fast for simple websites</td>
+    <td>Essential for custom websites</td>
+  </tr>
+  <tr>
+    <td>Great for non-developers</td>
+    <td>Gives full creative control</td>
+  </tr>
+  <tr>
+    <td>Limited flexibility</td>
+    <td>Infinite flexibility</td>
+  </tr>
+  <tr>
+    <td>You’re bound by the tool’s rules</td>
+    <td>You create your own rules</td>
+  </tr>
+</table>

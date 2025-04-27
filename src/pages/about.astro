@@ -1,5 +1,14 @@
 ---
+const pageTitle = 'About Me';
 
+const identity = {
+  firstName: 'Alok',
+  country: 'India',
+  occupation: 'Frontend Developer',
+  hobbies: ['Checking Tweets', 'Working out', 'Cooking'],
+};
+
+const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Astro', 'Writing Docs'];
 ---
 
 <html lang="en">
@@ -8,25 +17,41 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
-    <body>
-      <a href="/">Home</a>
-      <a href="/about/">About</a>
-      <a href="/blog/">Blog</a>
-      <h1>About Me</h1>
-      <h2>... and my new Astro site!</h2>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+    <h1>Hey! I'm {identity.firstName} 👋</h1>
+    <h2>Welcome to my new Astro site!</h2>
 
-      <p>
-        I am working through Astro's introductory tutorial. This is the second
-        page on my website, and it's the first one I built myself!
-      </p>
+    <p>
+      I'm currently working through Astro's introductory tutorial. This is the
+      second page on my site — and the first one I built all by myself!
+    </p>
 
-      <p>
-        This site will update as I complete more of the tutorial, so keep
-        checking back and see how my journey is going!
-      </p>
-    </body>
+    <p>
+      This site will grow as I learn more, so feel free to check back and follow
+      along with my progress.
+    </p>
+
+    <p>
+      I'm based in {identity.country} and work as a {identity.occupation}.
+      {
+        identity.hobbies.length >= 2 && (
+          <>
+            {' '}
+            During my freetime, I enjoy {identity.hobbies[0].toLowerCase()} and{' '}
+            {identity.hobbies[1].toLowerCase()}.
+          </>
+        )
+      }
+    </p>
+
+    <h3>What I'm learning right now:</h3>
+    <ul>
+      {skills.map((skill) => <li>{skill}</li>)}
+    </ul>
   </body>
 </html>
