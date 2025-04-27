@@ -8,7 +8,10 @@ const identity = {
   hobbies: ['Checking Tweets', 'Working out', 'Cooking'],
 };
 
-const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Astro', 'Writing Docs'];
+const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Astro', 'Writing Blogs'];
+
+const finished = false;
+const goal = 3;
 ---
 
 <html lang="en">
@@ -53,5 +56,14 @@ const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Astro', 'Writing Docs'];
     <ul>
       {skills.map((skill) => <li>{skill}</li>)}
     </ul>
+
+    {finished && <p>I finished this tutorial!</p>}
+    {
+      goal === 3 ? (
+        <p>My goal is to finish in {goal} days.</p>
+      ) : (
+        <p>My goal is not {goal} days.</p>
+      )
+    }
   </body>
 </html>
