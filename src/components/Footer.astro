@@ -1,0 +1,40 @@
+---
+const socialLinks = [
+  {
+    platform: 'github',
+    username: 'alok-38',
+    icon: 'https://api.iconify.design/simple-icons:github.svg?color=%23181717',
+  },
+  {
+    platform: 'twitter',
+    username: 'plantsfortrees',
+    icon: 'https://api.iconify.design/simple-icons:x.svg?color=%23000000',
+  },
+  {
+    platform: 'linkedin',
+    url: 'https://www.linkedin.com/in/alokananda-y-1b06272a1/',
+    icon: 'https://api.iconify.design/simple-icons:linkedin.svg?color=%230A66C2',
+  },
+];
+---
+
+<footer>
+  <p>
+    Find me on:{' '}
+    {
+      socialLinks.map(({ platform, username, url, icon }) => {
+        const href = url ?? `https://www.${platform}.com/${username}`;
+        return (
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href={href}
+            style="margin-right: 0.5em; display: inline-block;"
+          >
+            <img src={icon} alt={`${platform} icon`} width="20" height="20" />
+          </a>
+        );
+      })
+    }
+  </p>
+</footer>
