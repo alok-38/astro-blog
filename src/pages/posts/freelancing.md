@@ -1,7 +1,7 @@
 ---
-title: 'Pragmatic view of entrepreneurship'
-pubDate: 2025-04-30
-description: 'Skills required to become one'
+title: 'Pragmatic view of freelancing'
+pubDate: 2025-05-01
+description: 'Is Freelancing Right for You'
 author: 'Alok'
 image:
   url: 'https://docs.astro.build/assets/rose.webp'
