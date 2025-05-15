@@ -11,7 +11,7 @@ tags: ['backend', 'JavaScript', 'learning in public', 'full-stack']
 
 # What is the "backend" in backend web development?
 
-<img src="/src/assets/images/backend.jpg" alt="backend web development" style="object-fit:cover; max-width: 42%; width: 100%; height: 250px;">
+<img src="/public/images/backend.jpg" alt="backend web development" style="object-fit:cover; max-width: 42%; width: 100%; height: 250px;">
 
 The **backend** refers to the part of a software application or website that handles the _logic_, database interactions, authentication, and server-side operations — essentially, everything that happens behind the scenes.
 
